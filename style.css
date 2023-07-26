@@ -78,6 +78,10 @@ html { font-size: 100%; }
 
 body{
     background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg), url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: 0% 0%, 100% 100%;
+    background-size: 100%, 0%;
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
     justify-content: center;
@@ -90,6 +94,7 @@ body{
     flex-direction: column;
     width: 450px;
     border-radius: 1rem;
+    margin: 1.5rem;
 }
 
 .main_image{

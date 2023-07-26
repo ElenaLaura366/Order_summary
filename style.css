@@ -74,7 +74,7 @@ select {
     }
 }
 
-html { font-size: 62.5%; }
+html { font-size: 100%; }
 
 body{
     background-color: hsl(225, 100%, 94%);
@@ -88,22 +88,19 @@ body{
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: fit-content;
+    width: 450px;
     border-radius: 1rem;
 }
 
 .main_image{
     border-radius: 1rem 1rem 0 0;
-    height: 100%;
-    object-fit: cover;
     width: 100%;
 }
 
 .title_section{
     display: flex;
     flex-direction: column;
-    padding: 3rem 0 1.5rem 0;
+    padding: 2.5rem 0 1.5rem 0;
     text-align: center;
 }
 
@@ -111,14 +108,15 @@ body{
     font-size: 2rem;
     color: hsl(223, 47%, 23%);
     font-weight: 900;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .title_section p{
     color: hsl(224, 23%, 55%);
     max-width: 30ch;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+    margin: 0 auto;
 }
 
 .price_section{
@@ -126,4 +124,70 @@ body{
     background-color: hsl(225, 100%, 98%);
     padding: 1.5rem;
     border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.price_section h1, p, a{
+    font-size: 1rem;
+}
+
+.price_section h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.price_section p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.price_section a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.price_section a:hover{
+    color: rgba(56, 41, 224, 0.6);
+    text-decoration: none;
+}
+
+.links_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.links_section a{
+    text-decoration: none;
+}
+
+.links_section a:nth-child(2n+1){
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    padding: 0.9rem;
+    border-radius: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    box-shadow: -10px 20px 20px 0px rgb(56, 41, 224, 0.2);
+}
+
+.links_section a:nth-child(2n+1):hover{
+    background: rgba(56, 41, 224, 0.6);
+}
+
+.links_section a:nth-child(2n){
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-align: center;
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.links_section a:nth-child(2n):hover{
+    color:hsl(223, 47%, 23%);
 }
